@@ -7,10 +7,10 @@ const exerciceSchema = new Schema({
     guid: Number,
     title: {
         type: String,
-        required: true,
+        required: false,
     },
     description: String,
-    date: Date,
+    dateExo: Date,
     duration: Number,
     level: String,
     students: [{ type: Schema.Types.ObjectId, ref: "Student" }]

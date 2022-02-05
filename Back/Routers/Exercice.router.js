@@ -2,11 +2,11 @@ const express = require('express');
 const routerExercice = express.Router();
 const exerciceController = require('../Controllers/Exercice.Controllers');
 
-routerExercice.get('/AllExercices', exerciceController.getAllExercices);
-routerExercice.get('/:id', exerciceController.getSingleExercice);
+//routerExercice.get('/AllExercices', exerciceController.getAllExercices);
+//routerExercice.get('/:id', exerciceController.getSingleExercice);
 
 routerExercice.post('/create', exerciceController.createExercice);
-routerExercice.put('/update/:id', exerciceController.updatetSingleExercice);
-routerExercice.delete('/delete/:id', exerciceController.deleteSingleExercice);
+// routerExercice.put('/update/:id', exerciceController.updatetSingleExercice);
+// routerExercice.delete('/delete/:id', exerciceController.deleteSingleExercice);
 
 module.exports = routerExercice;

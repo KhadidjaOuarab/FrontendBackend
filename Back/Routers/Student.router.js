@@ -2,11 +2,11 @@ const express = require('express');
 const routerStudent = express.Router();
 const studentController = require('../Controllers/Student.Controllers');
 
-routerStudent.get('/AllExercices', studentController.getAllExercices);
-routerStudent.get('/:id', studentController.getSingleExercice);
+routerStudent.get('/AllStudents', studentController.getAllStudents);
+routerStudent.get('/:id', studentController.getSingleStudent);
 
-routerStudent.post('/create', studentController.createExercice);
-routerStudent.put('/update/:id', studentController.updatetSingleExercice);
-routerStudent.delete('/delete/:id', studentController.deleteSingleExercice);
+routerStudent.post('/create', studentController.createStudent);
+routerStudent.put('/update/:id', studentController.updatetSingleStudent);
+routerStudent.delete('/delete/:id', studentController.deleteSingleStudent);
 
 module.exports = routerStudent;

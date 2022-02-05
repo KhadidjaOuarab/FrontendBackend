@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 const studentSchema = new Schema({
+    matricule: Number,
     firstName: String,
     lastName: String,
     group: String,
