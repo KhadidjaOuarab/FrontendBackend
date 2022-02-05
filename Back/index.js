@@ -3,11 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 //const actorsRouter = require("./routes/actors.routes")
-
 require("dotenv").config();
-
 app.use(express.json())
-
 app.get("/", (req, res) => {
   res.send("Server express connected on port 3000");
 });
