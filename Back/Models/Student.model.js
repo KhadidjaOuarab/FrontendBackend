@@ -8,7 +8,14 @@ const studentSchema = new Schema({
     firstName: String,
     lastName: String,
     group: String,
-    exercices: [{ type: Schema.Types.ObjectId, ref: "Exercice" }]
+    exercices: [{   
+        guid: Number,
+        title: String,           
+        description: String,
+        dateExo: Date,
+        duration: Number,
+        level: String 
+    }]
 
 });
 

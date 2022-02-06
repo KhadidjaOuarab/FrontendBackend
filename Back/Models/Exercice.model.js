@@ -13,7 +13,13 @@ const exerciceSchema = new Schema({
     dateExo: Date,
     duration: Number,
     level: String,
-    students: [{ type: Schema.Types.ObjectId, ref: "Student" }]
+    students: [
+        { 
+        matricule: Number, 
+        firstName: String,
+        lastName: String,
+        group: String 
+    }]
 
 });
 
